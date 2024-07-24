@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('rain.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Canvas */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); /* Glass-like effect */
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #eb4908;
+}
+
+/* Main Container */
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Links in Main Container */
+.main-container a {
+    color: #eb4908;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.main-container a:hover {
+    color: white;
+}
+
+/* Chat Container */
+.chat-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 90%;
+    max-width: 700px;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 80%;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Chat Input Container */
+.chat-input-container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+/* Chat Input */
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+.chat-input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+/* Chat Send Button */
+.chat-send-button {
+    background: #eb4908;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.chat-send-button:hover {
+    background: #d43f00;
+    transform: translateY(-2px);
+}
+
+/* Adjustments for Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav a {
+        margin: 5px 0;
+    }
+    .main-container {
+        width: 80%;
+        padding: 15px;
+    }
+    .chat-container {
+        top: 10%;
+        height: 80%;
+    }
+}

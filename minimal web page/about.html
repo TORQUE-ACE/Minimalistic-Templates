@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Animated Minimal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ccc;
+        }
+        .content {
+            padding-top: 5rem;
+            text-align: center;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .section-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .profile-card {
+            background-color: #222;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+        .profile-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+        .profile-links a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div id="animatedText" class="text-center mb-4">About Us</div>
+
+        <section class="section">
+            <div class="section-title">Our Owners</div>
+            <div class="section-description">Meet the visionary leaders behind our organization.</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <img src="owner1.jpg" alt="Owner 1">
+                        <p>Owner 1 - Co-Founder & CEO</p>
+                        <div class="profile-links">
+                            <a href="https://owner1website.com">Website</a>
+                            <a href="https://instagram.com/owner1">Instagram</a>
+                            <a href="https://twitter.com/owner1">Twitter</a>
+                            <a href="mailto:owner1@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <img src="owner2.jpg" alt="Owner 2">
+                        <p>Owner 2 - Co-Founder & COO</p>
+                        <div class="profile-links">
+                            <a href="https://owner2website.com">Website</a>
+                            <a href="https://instagram.com/owner2">Instagram</a>
+                            <a href="https://twitter.com/owner2">Twitter</a>
+                            <a href="mailto:owner2@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <img src="owner3.jpg" alt="Owner 3">
+                        <p>Owner 3 - Co-Founder & CTO</p>
+                        <div class="profile-links">
+                            <a href="https://owner3website.com">Website</a>
+                            <a href="https://instagram.com/owner3">Instagram</a>
+                            <a href="https://twitter.com/owner3">Twitter</a>
+                            <a href="mailto:owner3@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Our Admins</div>
+            <div class="section-description">The dedicated team that keeps everything running smoothly.</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="profile-card">
+                        <img src="admin1.jpg" alt="Admin 1">
+                        <p>Admin 1 - HR Manager</p>
+                        <div class="profile-links">
+                            <a href="https://admin1website.com">Website</a>
+                            <a href="https://instagram.com/admin1">Instagram</a>
+                            <a href="https://twitter.com/admin1">Twitter</a>
+                            <a href="mailto:admin1@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="profile-card">
+                        <img src="admin2.jpg" alt="Admin 2">
+                        <p>Admin 2 - IT Manager</p>
+                        <div class="profile-links">
+                            <a href="https://admin2website.com">Website</a>
+                            <a href="https://instagram.com/admin2">Instagram</a>
+                            <a href="https://twitter.com/admin2">Twitter</a>
+                            <a href="mailto:admin2@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="profile-card">
+                        <img src="admin3.jpg" alt="Admin 3">
+                        <p>Admin 3 - Marketing Manager</p>
+                        <div class="profile-links">
+                            <a href="https://admin3website.com">Website</a>
+                            <a href="https://instagram.com/admin3">Instagram</a>
+                            <a href="https://twitter.com/admin3">Twitter</a>
+                            <a href="mailto:admin3@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="profile-card">
+                        <img src="admin4.jpg" alt="Admin 4">
+                        <p>Admin 4 - Finance Manager</p>
+                        <div class="profile-links">
+                            <a href="https://admin4website.com">Website</a>
+                            <a href="https://instagram.com/admin4">Instagram</a>
+                            <a href="https://twitter.com/admin4">Twitter</a>
+                            <a href="mailto:admin4@example.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Our Story</div>
+            <div class="section-description">Learn about how we started and our journey so far.</div>
+            <p>
+                Our organization was founded in [Year] by a group of passionate individuals who wanted to make a difference in the industry. 
+                With a commitment to innovation and excellence, we have grown from a small startup to a leading company in our field.
+                Our journey has been filled with challenges and triumphs, and we are proud of the impact we have made.
+            </p>
+            <p>
+                We believe in the power of collaboration and the importance of community. Our team is dedicated to creating value for our customers and partners, 
+                and we are always looking for new ways to push the boundaries of what is possible.
+            </p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

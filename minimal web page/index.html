@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Animated Minimal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ccc;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .section-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta {
+            background-color: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1 id="animatedText">Minimal</h1>
+    </div>
+
+    <section class="section">
+        <div class="section-title">Our Services</div>
+        <div class="section-description">We offer a wide range of services to meet your needs.</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cta">
+                    <h3>Service 1</h3>
+                    <p>High-quality service to meet your demands.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cta">
+                    <h3>Service 2</h3>
+                    <p>Reliable and efficient service for all your needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cta">
+                    <h3>Service 3</h3>
+                    <p>Exceptional service to ensure your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Why Choose Us?</div>
+        <div class="section-description">Discover the benefits of working with us.</div>
+        <p>
+            We are dedicated to providing top-notch services and ensuring customer satisfaction.
+            Our team of experts is always ready to go the extra mile to meet your needs.
+        </p>
+        <p>
+            Join the many satisfied clients who have benefited from our professional services and
+            experience the difference for yourself.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Testimonials</div>
+        <div class="section-description">What our clients are saying.</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cta">
+                    <p>"Amazing service! Highly recommend."</p>
+                    <p>- Client 1</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cta">
+                    <p>"Professional and reliable."</p>
+                    <p>- Client 2</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cta">
+                    <p>"Exceeded my expectations."</p>
+                    <p>- Client 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
